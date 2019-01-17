@@ -93,6 +93,7 @@ ARG PHP_RUNTIME_DEPS="\
   zip \
   pdo \
   pdo_mysql \
+  postgresql \
   exif"
 
 # Install dependencies.
