@@ -1,6 +1,6 @@
 NCAA DIVISION III BASEBALL PROGRAMS — 2026 SEASON
 ===================================================
-Total: 383 schools
+Total: 382 schools
 Compiled 2026-08-05. Membership verified against 2026-season conference
 standings, tournament fields, preseason coaches' polls, and realignment
 announcements. Schools are listed under the conference in which their
@@ -141,9 +141,8 @@ affiliate members whose baseball plays outside their primary conference.
 - John Jay College
 - Lehman College
 
-=== UNITED EAST CONFERENCE (10) ===
+=== UNITED EAST CONFERENCE (9) ===
 - Cairn University
-- Gallaudet University
 - Keystone College
 - Lancaster Bible College
 - Penn State Abington
@@ -482,10 +481,11 @@ competes in the Liberty League and is listed there.)
 
 ===================================================
 VERIFICATION NOTES
-- Total of 383 programs is consistent with the NCAA's ~389 sponsoring
+- Total of 382 programs is consistent with the NCAA's ~389 sponsoring
   schools in 2022 minus subsequent closures (Birmingham-Southern, Cabrini,
   Wells, Medaille, Notre Dame College OH, Eastern Nazarene, Fontbonne,
-  Northland, Clarks Summit, Bryn Athyn athletics) and D2/D1 departures
+  Northland, Clarks Summit, Bryn Athyn athletics, Gallaudet baseball
+  closed May 2024) and D2/D1 departures
   (Ferrum, UT Dallas, Sul Ross State, College of Staten Island), plus
   recent additions (Hartford, Mary Baldwin, Regent, Asbury, Lyon,
   JWU-Charlotte, UW-River Falls reinstatement, St. Scholastica et al.).
