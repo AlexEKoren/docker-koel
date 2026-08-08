@@ -8,23 +8,27 @@ Outputs:
                          parsed: school, season, url, status, reason
 
 Requires: requests, pandas, lxml  (pip install requests pandas lxml)
-
-Run from a machine/environment with open outbound HTTPS to school athletics
-sites; this does not work behind an egress-restricted proxy.
 """
 import csv
+import io
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 import pandas as pd
 import requests
 
 SEASONS = ["2026", "2025", "2024", "2023", "2022"]
-UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"}
+UA = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.google.com/",
+}
 STAT_COLS = ["avg", "gp", "ab", "r", "h", "2b", "3b", "hr", "rbi", "bb", "so", "sb", "obp", "slg"]
+WORKERS = 12
 
-# Column aliases seen across Sidearm/Presto batting tables
 ALIASES = {
     "avg": {"avg", "ba", "batting avg"},
     "gp": {"gp", "g", "gp-gs", "games"},
@@ -42,6 +46,7 @@ ALIASES = {
     "slg": {"slg", "slg%", "slgpct"},
 }
 PLAYER_ALIASES = {"player", "name", "batter"}
+TOTALS = re.compile(r"^(totals?|opponents?|team|tm)\b", re.I)
 
 
 def normalize_cols(df):
@@ -51,76 +56,107 @@ def normalize_cols(df):
         if key in PLAYER_ALIASES:
             cols[c] = "player"
             continue
+        if key.startswith("unnamed") and df[c].dtype == object:
+            cols[c] = "player"
+            continue
         for canon, names in ALIASES.items():
             if key in names:
                 cols[c] = canon
                 break
-    return df.rename(columns=cols)
+    df = df.rename(columns=cols)
+    return df.loc[:, ~df.columns.duplicated()]
 
 
-def pick_batting_table(tables):
-    """Choose the table that looks like individual batting stats."""
-    best, best_score = None, 0
-    for t in tables:
-        t = normalize_cols(t)
-        have = set(t.columns)
-        score = len(have & {"player", "avg", "ab", "h", "r"})
-        if "player" in have and "ab" in have and score > best_score:
-            best, best_score = t, score
-    return best
-
-
-def clean(df):
-    df = df[[c for c in ["player"] + STAT_COLS if c in df.columns]].copy()
+def clean_players(df):
+    df = df.copy()
     df["player"] = df["player"].astype(str).str.strip()
-    # Drop totals/opponent rows and blanks
-    df = df[~df["player"].str.lower().str.match(r"(totals?|opponents?|team|nan)\b.*", na=True)]
-    df = df[df["player"] != ""]
+    # Sidearm renders "Name, First  12 Name, First" (link + number + span) - collapse it
+    df["player"] = df["player"].str.replace(r"^(.+?)\s+\d+\s+\1$", r"\1", regex=True)
+    df = df[~df["player"].str.lower().isin({"", "nan"})]
+    df = df[~df["player"].str.match(TOTALS, na=True)]
     return df
 
 
+def extract(html_text):
+    """Return a per-player batting DataFrame from a stats page, or None."""
+    try:
+        tables = [normalize_cols(t) for t in pd.read_html(io.StringIO(html_text))]
+    except ValueError:
+        return None
+    # Primary batting table: has player + ab (+ ideally avg/h)
+    batting, batting_score = None, 0
+    for t in tables:
+        have = set(t.columns)
+        if "player" in have and "ab" in have:
+            score = len(have & {"avg", "h", "rbi", "hr", "bb"})
+            if score > batting_score or batting is None:
+                batting, batting_score = t, score
+    if batting is None:
+        return None
+    batting = clean_players(batting)
+    if batting.empty:
+        return None
+    # Presto splits runs/steals into a second table keyed by the same player column
+    if "r" not in batting.columns:
+        for t in tables:
+            have = set(t.columns)
+            if "player" in have and "r" in have and "ab" not in have and "ip" not in str(have):
+                if "era" in have or "app" in have:
+                    continue  # pitching table
+                supp = clean_players(t)[["player"] + [c for c in ["r", "sb"] if c in t.columns]]
+                batting = batting.merge(supp, on="player", how="left", suffixes=("", "_y"))
+                break
+    keep = ["player"] + [c for c in STAT_COLS if c in batting.columns]
+    return batting[keep]
+
+
 def fetch_season(url):
-    """Return (dataframe, status, reason). dataframe is None on failure."""
     try:
         resp = requests.get(url, headers=UA, timeout=30)
     except requests.RequestException as e:
         return None, "fetch_error", type(e).__name__
     if resp.status_code != 200:
         return None, f"http_{resp.status_code}", "page not found or blocked"
-    try:
-        tables = pd.read_html(resp.text)
-    except ValueError:
-        return None, "no_tables", "page has no parseable stats tables"
-    table = pick_batting_table(tables)
+    table = extract(resp.text)
     if table is None:
         return None, "no_batting_table", "no table with player/AB columns found"
-    table = clean(table)
     if table.empty:
         return None, "empty_table", "batting table parsed but had no player rows"
     return table, "ok", ""
 
 
+def do_school(row):
+    stats, gaps = [], []
+    school, conf = row["school"], row["conference"]
+    for season in SEASONS:
+        url = row.get(f"url_{season}", "").strip()
+        if not url:
+            gaps.append([school, season, "", "no_url",
+                        "no URL (program did not exist that season or URL unknown)"])
+            continue
+        table, status, reason = fetch_season(url)
+        if table is None:
+            gaps.append([school, season, url, status, reason])
+        else:
+            for _, p in table.iterrows():
+                stats.append([school, conf, season, p.get("player", "")] +
+                             [p.get(c, "") for c in STAT_COLS])
+        time.sleep(0.2)
+    return school, stats, gaps
+
+
 def main():
     src = sys.argv[1] if len(sys.argv) > 1 else "d3_baseball_stats_urls.csv"
-    stats_rows, gap_rows = [], []
     with open(src, newline="") as f:
         schools = list(csv.DictReader(f))
-    for i, row in enumerate(schools, 1):
-        school, conf = row["school"], row["conference"]
-        print(f"[{i}/{len(schools)}] {school}", flush=True)
-        for season in SEASONS:
-            url = row.get(f"url_{season}", "").strip()
-            if not url:
-                gap_rows.append([school, season, "", "no_url", "no URL (program did not exist that season or URL unknown)"])
-                continue
-            table, status, reason = fetch_season(url)
-            if table is None:
-                gap_rows.append([school, season, url, status, reason])
-            else:
-                for _, p in table.iterrows():
-                    stats_rows.append([school, conf, season, p.get("player", "")] +
-                                      [p.get(c, "") for c in STAT_COLS])
-            time.sleep(0.5)  # be polite to school servers
+    stats_rows, gap_rows = [], []
+    done = 0
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        for school, stats, gaps in ex.map(do_school, schools):
+            done += 1
+            stats_rows.extend(stats)
+            gap_rows.extend(gaps)
+            print(f"[{done}/{len(schools)}] {school}: +{len(stats)} players, {len(gaps)} gaps", flush=True)
 
     with open("d3_batting_stats.csv", "w", newline="") as f:
         w = csv.writer(f)
