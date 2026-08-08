@@ -1,6 +1,6 @@
 NCAA DIVISION III BASEBALL PROGRAMS — 2026 SEASON
 ===================================================
-Total: 382 schools
+Total: 381 schools
 Compiled 2026-08-05. Membership verified against 2026-season conference
 standings, tournament fields, preseason coaches' polls, and realignment
 announcements. Schools are listed under the conference in which their
@@ -52,7 +52,7 @@ affiliate members whose baseball plays outside their primary conference.
 - Vermont State University Castleton
 - Western Connecticut State University
 
-=== CONFERENCE OF NEW ENGLAND (11) ===
+=== CONFERENCE OF NEW ENGLAND (10) ===
 - Curry College
 - Endicott College
 - Gordon College
@@ -61,7 +61,6 @@ affiliate members whose baseball plays outside their primary conference.
 - Nichols College
 - Roger Williams University
 - Suffolk University
-- University of New England
 - Wentworth Institute of Technology
 - Western New England University
 
@@ -481,7 +480,9 @@ competes in the Liberty League and is listed there.)
 
 ===================================================
 VERIFICATION NOTES
-- Total of 382 programs is consistent with the NCAA's ~389 sponsoring
+- University of New England removed after verification: club baseball
+  only, no varsity program (absent from CNE 2026 baseball standings).
+- Total of 381 programs is consistent with the NCAA's ~389 sponsoring
   schools in 2022 minus subsequent closures (Birmingham-Southern, Cabrini,
   Wells, Medaille, Notre Dame College OH, Eastern Nazarene, Fontbonne,
   Northland, Clarks Summit, Bryn Athyn athletics, Gallaudet baseball
