@@ -81,7 +81,7 @@ def extract(html_text):
     """Return a per-player batting DataFrame from a stats page, or None."""
     try:
         tables = [normalize_cols(t) for t in pd.read_html(io.StringIO(html_text))]
-    except ValueError:
+    except Exception:
         return None
     # Primary batting table: has player + ab (+ ideally avg/h)
     batting, batting_score = None, 0
@@ -149,24 +149,23 @@ def main():
     src = sys.argv[1] if len(sys.argv) > 1 else "d3_baseball_stats_urls.csv"
     with open(src, newline="") as f:
         schools = list(csv.DictReader(f))
-    stats_rows, gap_rows = [], []
-    done = 0
-    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-        for school, stats, gaps in ex.map(do_school, schools):
-            done += 1
-            stats_rows.extend(stats)
-            gap_rows.extend(gaps)
-            print(f"[{done}/{len(schools)}] {school}: +{len(stats)} players, {len(gaps)} gaps", flush=True)
-
-    with open("d3_batting_stats.csv", "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["school", "conference", "season", "player"] + STAT_COLS)
-        w.writerows(stats_rows)
-    with open("d3_batting_gaps.csv", "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["school", "season", "url", "status", "reason"])
-        w.writerows(gap_rows)
-    print(f"done: {len(stats_rows)} player-seasons, {len(gap_rows)} gaps")
+    n_stats = n_gaps = done = 0
+    with open("d3_batting_stats.csv", "w", newline="") as sf, \
+         open("d3_batting_gaps.csv", "w", newline="") as gf:
+        sw, gw = csv.writer(sf), csv.writer(gf)
+        sw.writerow(["school", "conference", "season", "player"] + STAT_COLS)
+        gw.writerow(["school", "season", "url", "status", "reason"])
+        with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+            for school, stats, gaps in ex.map(do_school, schools):
+                done += 1
+                sw.writerows(stats)
+                gw.writerows(gaps)
+                sf.flush()
+                gf.flush()
+                n_stats += len(stats)
+                n_gaps += len(gaps)
+                print(f"[{done}/{len(schools)}] {school}: +{len(stats)} players, {len(gaps)} gaps", flush=True)
+    print(f"done: {n_stats} player-seasons, {n_gaps} gaps")
 
 
 if __name__ == "__main__":
