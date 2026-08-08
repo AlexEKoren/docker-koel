@@ -334,3 +334,94 @@ New Jersey City University,2025,https://njcugothicknights.com/sports/baseball/st
 New Jersey City University,2024,https://njcugothicknights.com/sports/baseball/stats/2024,no_batting_table,no table with player/AB columns found
 New Jersey City University,2023,https://njcugothicknights.com/sports/baseball/stats/2023,no_batting_table,no table with player/AB columns found
 New Jersey City University,2022,https://njcugothicknights.com/sports/baseball/stats/2022,no_batting_table,no table with player/AB columns found
+Chatham University,2026,https://chathamcougars.com/sports/bsb/2025-26/teams/chatham,fetch_error,ConnectionError
+Chatham University,2025,https://chathamcougars.com/sports/bsb/2024-25/teams/chatham,fetch_error,ConnectionError
+Chatham University,2024,https://chathamcougars.com/sports/bsb/2023-24/teams/chatham,fetch_error,ConnectionError
+Chatham University,2023,https://chathamcougars.com/sports/bsb/2022-23/teams/chatham,fetch_error,ConnectionError
+Chatham University,2022,https://chathamcougars.com/sports/bsb/2021-22/teams/chatham,fetch_error,ConnectionError
+Franciscan University of Steubenville,2026,https://athletics.franciscan.edu/sports/baseball/stats/2026,fetch_error,ProxyError
+Franciscan University of Steubenville,2025,https://athletics.franciscan.edu/sports/baseball/stats/2025,fetch_error,ProxyError
+Franciscan University of Steubenville,2024,https://athletics.franciscan.edu/sports/baseball/stats/2024,fetch_error,ProxyError
+Franciscan University of Steubenville,2023,https://athletics.franciscan.edu/sports/baseball/stats/2023,fetch_error,ProxyError
+Franciscan University of Steubenville,2022,https://athletics.franciscan.edu/sports/baseball/stats/2022,fetch_error,ProxyError
+Geneva College,2026,https://athletics.geneva.edu/sports/bsb/2025-26/teams/geneva,http_404,page not found or blocked
+Geneva College,2025,https://athletics.geneva.edu/sports/bsb/2024-25/teams/geneva,http_404,page not found or blocked
+Geneva College,2024,https://athletics.geneva.edu/sports/bsb/2023-24/teams/geneva,http_404,page not found or blocked
+Geneva College,2023,https://athletics.geneva.edu/sports/bsb/2022-23/teams/geneva,http_404,page not found or blocked
+Geneva College,2022,https://athletics.geneva.edu/sports/bsb/2021-22/teams/geneva,http_404,page not found or blocked
+Grove City College,2026,https://athletics.gcc.edu/sports/bsb/2025-26/teams/grovecity,http_404,page not found or blocked
+Grove City College,2025,https://athletics.gcc.edu/sports/bsb/2024-25/teams/grovecity,http_404,page not found or blocked
+Grove City College,2024,https://athletics.gcc.edu/sports/bsb/2023-24/teams/grovecity,http_404,page not found or blocked
+Grove City College,2023,https://athletics.gcc.edu/sports/bsb/2022-23/teams/grovecity,http_404,page not found or blocked
+Grove City College,2022,https://athletics.gcc.edu/sports/bsb/2021-22/teams/grovecity,http_404,page not found or blocked
+Saint Vincent College,2026,https://athletics.stvincent.edu/sports/bsb/2025-26/teams/saintvincent,http_404,page not found or blocked
+Saint Vincent College,2025,https://athletics.stvincent.edu/sports/bsb/2024-25/teams/saintvincent,http_404,page not found or blocked
+Saint Vincent College,2024,https://athletics.stvincent.edu/sports/bsb/2023-24/teams/saintvincent,http_404,page not found or blocked
+Saint Vincent College,2023,https://athletics.stvincent.edu/sports/bsb/2022-23/teams/saintvincent,http_404,page not found or blocked
+Saint Vincent College,2022,https://athletics.stvincent.edu/sports/bsb/2021-22/teams/saintvincent,http_404,page not found or blocked
+Thiel College,2026,https://thieltomcats.com/sports/bsb/2025-26/teams/thiel,fetch_error,ProxyError
+Thiel College,2025,https://thieltomcats.com/sports/bsb/2024-25/teams/thiel,fetch_error,ProxyError
+Thiel College,2024,https://thieltomcats.com/sports/bsb/2023-24/teams/thiel,fetch_error,ProxyError
+Thiel College,2023,https://thieltomcats.com/sports/bsb/2022-23/teams/thiel,fetch_error,ProxyError
+Thiel College,2022,https://thieltomcats.com/sports/bsb/2021-22/teams/thiel,fetch_error,ProxyError
+Washington & Jefferson College,2026,https://gopresidents.com/sports/bsb/2025-26/teams/washjeff,http_404,page not found or blocked
+Washington & Jefferson College,2025,https://gopresidents.com/sports/bsb/2024-25/teams/washjeff,http_404,page not found or blocked
+Washington & Jefferson College,2024,https://gopresidents.com/sports/bsb/2023-24/teams/washjeff,http_404,page not found or blocked
+Washington & Jefferson College,2023,https://gopresidents.com/sports/bsb/2022-23/teams/washjeff,http_404,page not found or blocked
+Washington & Jefferson College,2022,https://gopresidents.com/sports/bsb/2021-22/teams/washjeff,http_404,page not found or blocked
+Waynesburg University,2026,https://waynesburgsports.com/sports/bsb/2025-26/teams/waynesburg,http_404,page not found or blocked
+Waynesburg University,2025,https://waynesburgsports.com/sports/bsb/2024-25/teams/waynesburg,http_404,page not found or blocked
+Waynesburg University,2024,https://waynesburgsports.com/sports/bsb/2023-24/teams/waynesburg,http_404,page not found or blocked
+Waynesburg University,2023,https://waynesburgsports.com/sports/bsb/2022-23/teams/waynesburg,http_404,page not found or blocked
+Waynesburg University,2022,https://waynesburgsports.com/sports/bsb/2021-22/teams/waynesburg,http_404,page not found or blocked
+Westminster College (PA),2026,https://athletics.westminster.edu/sports/bsb/2025-26/teams/westminster,http_404,page not found or blocked
+Westminster College (PA),2025,https://athletics.westminster.edu/sports/bsb/2024-25/teams/westminster,http_404,page not found or blocked
+Westminster College (PA),2024,https://athletics.westminster.edu/sports/bsb/2023-24/teams/westminster,http_404,page not found or blocked
+Westminster College (PA),2023,https://athletics.westminster.edu/sports/bsb/2022-23/teams/westminster,http_404,page not found or blocked
+Westminster College (PA),2022,https://athletics.westminster.edu/sports/bsb/2021-22/teams/westminster,http_404,page not found or blocked
+Coe College,2026,https://kohawks.com/sports/baseball/stats/2026,no_batting_table,no table with player/AB columns found
+Coe College,2025,https://kohawks.com/sports/baseball/stats/2025,no_batting_table,no table with player/AB columns found
+Coe College,2024,https://kohawks.com/sports/baseball/stats/2024,no_batting_table,no table with player/AB columns found
+Coe College,2023,https://kohawks.com/sports/baseball/stats/2023,no_batting_table,no table with player/AB columns found
+Coe College,2022,https://kohawks.com/sports/baseball/stats/2022,no_batting_table,no table with player/AB columns found
+Simpson College (IA),2026,https://simpsonathletics.com/sports/baseball/stats/2026,http_404,page not found or blocked
+Simpson College (IA),2025,https://simpsonathletics.com/sports/baseball/stats/2025,http_404,page not found or blocked
+Simpson College (IA),2024,https://simpsonathletics.com/sports/baseball/stats/2024,http_404,page not found or blocked
+Simpson College (IA),2023,https://simpsonathletics.com/sports/baseball/stats/2023,http_404,page not found or blocked
+Simpson College (IA),2022,https://simpsonathletics.com/sports/baseball/stats/2022,http_404,page not found or blocked
+Crown College (MN),2026,https://crownstorm.com/sports/baseball/stats/2026,no_batting_table,no table with player/AB columns found
+Crown College (MN),2025,https://crownstorm.com/sports/baseball/stats/2025,no_batting_table,no table with player/AB columns found
+Crown College (MN),2024,https://crownstorm.com/sports/baseball/stats/2024,no_batting_table,no table with player/AB columns found
+Crown College (MN),2023,https://crownstorm.com/sports/baseball/stats/2023,no_batting_table,no table with player/AB columns found
+Crown College (MN),2022,https://crownstorm.com/sports/baseball/stats/2022,no_batting_table,no table with player/AB columns found
+Martin Luther College,2026,https://mlcknights.com/sports/bsb/2025-26/teams/martinluther,http_404,page not found or blocked
+Martin Luther College,2025,https://mlcknights.com/sports/bsb/2024-25/teams/martinluther,http_404,page not found or blocked
+Martin Luther College,2024,https://mlcknights.com/sports/bsb/2023-24/teams/martinluther,http_404,page not found or blocked
+Martin Luther College,2023,https://mlcknights.com/sports/bsb/2022-23/teams/martinluther,http_404,page not found or blocked
+Martin Luther College,2022,https://mlcknights.com/sports/bsb/2021-22/teams/martinluther,http_404,page not found or blocked
+Blackburn College,2026,https://blackburnbeavers.com/sports/baseball/stats/2026,http_404,page not found or blocked
+Blackburn College,2025,https://blackburnbeavers.com/sports/baseball/stats/2025,http_404,page not found or blocked
+Blackburn College,2024,https://blackburnbeavers.com/sports/baseball/stats/2024,http_404,page not found or blocked
+Blackburn College,2023,https://blackburnbeavers.com/sports/baseball/stats/2023,http_404,page not found or blocked
+Blackburn College,2022,https://blackburnbeavers.com/sports/baseball/stats/2022,http_403,page not found or blocked
+Eureka College,2026,https://eurekareddevils.com/sports/baseball/stats/2026,http_404,page not found or blocked
+Eureka College,2025,https://eurekareddevils.com/sports/baseball/stats/2025,http_404,page not found or blocked
+Eureka College,2024,https://eurekareddevils.com/sports/baseball/stats/2024,http_404,page not found or blocked
+Eureka College,2023,https://eurekareddevils.com/sports/baseball/stats/2023,http_404,page not found or blocked
+Eureka College,2022,https://eurekareddevils.com/sports/baseball/stats/2022,http_404,page not found or blocked
+Greenville University,2026,https://gupanthers.com/sports/bsb/2025-26/teams/greenville,http_403,page not found or blocked
+Greenville University,2025,https://gupanthers.com/sports/bsb/2024-25/teams/greenville,http_403,page not found or blocked
+Greenville University,2024,https://gupanthers.com/sports/bsb/2023-24/teams/greenville,http_403,page not found or blocked
+Greenville University,2023,https://gupanthers.com/sports/bsb/2022-23/teams/greenville,http_403,page not found or blocked
+Greenville University,2022,https://gupanthers.com/sports/bsb/2021-22/teams/greenville,http_403,page not found or blocked
+Mississippi University for Women,2026,https://owlsathletics.com/sports/bsb/2025-26/teams/muw,http_404,page not found or blocked
+Mississippi University for Women,2025,https://owlsathletics.com/sports/bsb/2024-25/teams/muw,http_404,page not found or blocked
+Mississippi University for Women,2024,https://owlsathletics.com/sports/bsb/2023-24/teams/muw,http_404,page not found or blocked
+Mississippi University for Women,2023,https://owlsathletics.com/sports/bsb/2022-23/teams/muw,http_404,page not found or blocked
+Mississippi University for Women,2022,https://owlsathletics.com/sports/bsb/2021-22/teams/muw,http_404,page not found or blocked
+Principia College,2022,https://principiaathletics.com/sports/baseball/stats/2022,no_batting_table,no table with player/AB columns found
+Westminster College (MO),2026,https://wcbluejays.com/sports/baseball/stats/2026,no_batting_table,no table with player/AB columns found
+Westminster College (MO),2025,https://wcbluejays.com/sports/baseball/stats/2025,no_batting_table,no table with player/AB columns found
+Westminster College (MO),2024,https://wcbluejays.com/sports/baseball/stats/2024,no_batting_table,no table with player/AB columns found
+Westminster College (MO),2023,https://wcbluejays.com/sports/baseball/stats/2023,no_batting_table,no table with player/AB columns found
+Westminster College (MO),2022,https://wcbluejays.com/sports/baseball/stats/2022,no_batting_table,no table with player/AB columns found
