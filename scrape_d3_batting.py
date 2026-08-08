@@ -47,6 +47,10 @@ ALIASES = {
 }
 PLAYER_ALIASES = {"player", "name", "batter"}
 TOTALS = re.compile(r"^(totals?|opponents?|team|tm)\b", re.I)
+# Presto team-splits row labels that must never be treated as players
+SPLIT_LABELS = {"total", "conference", "non-conference", "exhibition", "home", "away",
+                "neutral", "wins", "losses", "january", "february", "march", "april",
+                "may", "june"}
 
 
 def normalize_cols(df):
@@ -56,7 +60,7 @@ def normalize_cols(df):
         if key in PLAYER_ALIASES:
             cols[c] = "player"
             continue
-        if key.startswith("unnamed") and df[c].dtype == object:
+        if key.startswith("unnamed") and not pd.api.types.is_numeric_dtype(df[c]):
             cols[c] = "player"
             continue
         for canon, names in ALIASES.items():
@@ -72,7 +76,9 @@ def clean_players(df):
     df["player"] = df["player"].astype(str).str.strip()
     # Sidearm renders "Name, First  12 Name, First" (link + number + span) - collapse it
     df["player"] = df["player"].str.replace(r"^(.+?)\s+\d+\s+\1$", r"\1", regex=True)
-    df = df[~df["player"].str.lower().isin({"", "nan"})]
+    # Presto monospace pages pad names with dot leaders ("Jamie Luna......")
+    df["player"] = df["player"].str.replace(r"\.{2,}$", "", regex=True).str.strip()
+    df = df[~df["player"].str.lower().isin({"", "nan"} | SPLIT_LABELS)]
     df = df[~df["player"].str.match(TOTALS, na=True)]
     return df
 

@@ -72,18 +72,20 @@ def find_pattern(school, domain):
         toks = set(re.findall(r"[a-z]+", school.lower())) - {"university", "college", "of", "the"}
         slugs.sort(key=lambda s: -sum(tok[:6] in s.lower() for tok in toks))
         for slug in slugs[:3]:
-            yy = f"{int(probe)-1}-{probe[2:]}"
-            t = try_url(f"https://{host}/sports/bsb/{yy}/teams/{slug}")
+            t = try_url(season_url("presto", host, slug, probe))
             if t is not None and len(t) >= 5:
                 return ("presto", host, slug)
     return None
+
+
+PRESTO_TMPL = "?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h"
 
 
 def season_url(kind, host, slug, season):
     if kind == "sidearm":
         return f"https://{host}/sports/{slug}/stats/{season}"
     yy = f"{int(season)-1}-{season[2:]}"
-    return f"https://{host}/sports/bsb/{yy}/teams/{slug}"
+    return f"https://{host}/sports/bsb/{yy}/teams/{slug}{PRESTO_TMPL}"
 
 
 def repair_school(args):
