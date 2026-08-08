@@ -1,90 +1,78 @@
+FIXED Albertus Magnus College: presto on albertusfalcons.com (slug=albertusmagnus), +86 rows, 1 seasons still missing
+FIXED Alfred University: sidearm on gosaxons.com (slug=baseball), +0 rows, 2 seasons still missing
+UNRESOLVED Anderson University (IN): no working pattern, 5 seasons missing
 UNRESOLVED Anna Maria College: no working pattern, 5 seasons missing
-UNRESOLVED Bridgewater State University: no working pattern, 5 seasons missing
+FIXED Austin College: presto on acroos.com (slug=austin), +112 rows, 0 seasons still missing
+UNRESOLVED Belhaven University: no working pattern, 5 seasons missing
+FIXED Blackburn College: presto on blackburnbeavers.com (slug=blackburn), +118 rows, 0 seasons still missing
+UNRESOLVED Bluffton University: no working pattern, 5 seasons missing
+UNRESOLVED Brevard College: no working pattern, 5 seasons missing
+FIXED Bridgewater State University: presto on www.bsubears.com (slug=bridgewaterst), +88 rows, 0 seasons still missing
+FIXED Centenary College (LA): presto on gocentenary.com (slug=centenaryla), +113 rows, 1 seasons still missing
+UNRESOLVED Chatham University: no working pattern, 5 seasons missing
+UNRESOLVED Coe College: no working pattern, 5 seasons missing
+UNRESOLVED Concordia College (Moorhead): no working pattern, 5 seasons missing
+UNRESOLVED Concordia University Texas: no working pattern, 5 seasons missing
+UNRESOLVED Crown College (MN): no working pattern, 5 seasons missing
+FIXED Curry College: presto on curryathletics.com (slug=curry), +113 rows, 0 seasons still missing
+FIXED Defiance College: presto on defianceathletics.com (slug=defiancecollegeoh), +27 rows, 4 seasons still missing
+UNRESOLVED East Texas Baptist University: no working pattern, 5 seasons missing
+UNRESOLVED Elms College: no working pattern, 5 seasons missing
+FIXED Endicott College: presto on ecgulls.com (slug=endicott), +95 rows, 1 seasons still missing
+UNRESOLVED Eureka College: no working pattern, 5 seasons missing
 UNRESOLVED Fitchburg State University: no working pattern, 5 seasons missing
 UNRESOLVED Framingham State University: no working pattern, 5 seasons missing
-UNRESOLVED Massachusetts Maritime Academy: no working pattern, 5 seasons missing
-UNRESOLVED MCLA (Massachusetts College of Liberal Arts): no working pattern, 5 seasons missing
-UNRESOLVED Salem State University: no working pattern, 5 seasons missing
-UNRESOLVED Westfield State University: no working pattern, 5 seasons missing
-UNRESOLVED Worcester State University: no working pattern, 5 seasons missing
-UNRESOLVED Curry College: no working pattern, 5 seasons missing
-UNRESOLVED Endicott College: no working pattern, 5 seasons missing
-UNRESOLVED Suffolk University: no working pattern, 5 seasons missing
-UNRESOLVED University of New England: no working pattern, 5 seasons missing
-UNRESOLVED Wentworth Institute of Technology: no working pattern, 5 seasons missing
-UNRESOLVED Albertus Magnus College: no working pattern, 5 seasons missing
-UNRESOLVED Elms College: no working pattern, 5 seasons missing
-UNRESOLVED Lasell University: no working pattern, 5 seasons missing
-UNRESOLVED Mitchell College: no working pattern, 5 seasons missing
-UNRESOLVED University of Saint Joseph (CT): no working pattern, 5 seasons missing
-UNRESOLVED Lesley University: no working pattern, 1 seasons missing
-FIXED Hobart College: sidearm on hwsathletics.com (slug=baseball), +0 rows, 1 seasons still missing
-FIXED Alfred University: sidearm on gosaxons.com (slug=baseball), +0 rows, 2 seasons still missing
-UNRESOLVED Hartwick College: no working pattern, 5 seasons missing
-UNRESOLVED Nazareth University: no working pattern, 5 seasons missing
-UNRESOLVED Russell Sage College: no working pattern, 5 seasons missing
-FIXED SUNY Polytechnic Institute: sidearm on wildcats.sunypoly.edu (slug=baseball), +0 rows, 1 seasons still missing
-UNRESOLVED Penn State Brandywine: no working pattern, 5 seasons missing
-FIXED Penn State Harrisburg: sidearm on psuharrisburgsports.com (slug=baseball), +0 rows, 1 seasons still missing
-UNRESOLVED Juniata College: no working pattern, 5 seasons missing
-FIXED Lycoming College: sidearm on lycomingathletics.com (slug=baseball), +0 rows, 1 seasons still missing
-UNRESOLVED Moravian University: no working pattern, 5 seasons missing
-UNRESOLVED Susquehanna University: no working pattern, 5 seasons missing
-UNRESOLVED Penn State Altoona: no working pattern, 5 seasons missing
-UNRESOLVED Penn State Behrend: no working pattern, 5 seasons missing
-UNRESOLVED Randolph College: no working pattern, 5 seasons missing
-UNRESOLVED Brevard College: no working pattern, 5 seasons missing
+UNRESOLVED Franciscan University of Steubenville: no working pattern, 5 seasons missing
 UNRESOLVED Greensboro College: no working pattern, 5 seasons missing
-UNRESOLVED Mary Baldwin University: no working pattern, 1 seasons missing
-UNRESOLVED Methodist University: no working pattern, 5 seasons missing
-UNRESOLVED North Carolina Wesleyan University: no working pattern, 5 seasons missing
-UNRESOLVED Pfeiffer University: no working pattern, 5 seasons missing
-UNRESOLVED Southern Virginia University: no working pattern, 5 seasons missing
-UNRESOLVED Muskingum University: no working pattern, 5 seasons missing
-UNRESOLVED Ohio Northern University: no working pattern, 5 seasons missing
-UNRESOLVED Wittenberg University: no working pattern, 5 seasons missing
-UNRESOLVED Anderson University (IN): no working pattern, 5 seasons missing
-UNRESOLVED Bluffton University: no working pattern, 5 seasons missing
-UNRESOLVED Defiance College: no working pattern, 5 seasons missing
-UNRESOLVED University of Olivet: no working pattern, 5 seasons missing
-UNRESOLVED Marian University (WI): no working pattern, 5 seasons missing
-UNRESOLVED Knox College: no working pattern, 5 seasons missing
-UNRESOLVED UW-Platteville: no working pattern, 5 seasons missing
-UNRESOLVED UW-Stout: no working pattern, 5 seasons missing
-UNRESOLVED Concordia College (Moorhead): no working pattern, 5 seasons missing
-FIXED George Fox University: sidearm on athletics.georgefox.edu (slug=baseball), +122 rows, 0 seasons still missing
-UNRESOLVED Linfield University: no working pattern, 5 seasons missing
-UNRESOLVED Willamette University: no working pattern, 5 seasons missing
-UNRESOLVED University of La Verne: no working pattern, 5 seasons missing
-FIXED Maranatha Baptist University: sidearm on mbusabercats.com (slug=baseball), +75 rows, 0 seasons still missing
-FIXED Southwestern University: sidearm on southwesternpirates.com (slug=baseball), +0 rows, 1 seasons still missing
-UNRESOLVED Belhaven University: no working pattern, 5 seasons missing
+UNRESOLVED Greenville University: no working pattern, 5 seasons missing
+UNRESOLVED Hartwick College: no working pattern, 5 seasons missing
+FIXED Hobart College: sidearm on hwsathletics.com (slug=baseball), +0 rows, 1 seasons still missing
 UNRESOLVED Huntingdon College: no working pattern, 5 seasons missing
 UNRESOLVED Johnson & Wales University-Charlotte: no working pattern, 1 seasons missing
-UNRESOLVED East Texas Baptist University: no working pattern, 5 seasons missing
-UNRESOLVED Austin College: no working pattern, 5 seasons missing
-UNRESOLVED Centenary College (LA): no working pattern, 5 seasons missing
-UNRESOLVED Concordia University Texas: no working pattern, 5 seasons missing
-UNRESOLVED University of Dallas: no working pattern, 5 seasons missing
-UNRESOLVED University of the Ozarks (AR): no working pattern, 5 seasons missing
-UNRESOLVED Schreiner University: no working pattern, 5 seasons missing
-FIXED New Jersey City University: sidearm on keanathletics.com (slug=baseball), +106 rows, 0 seasons still missing
-UNRESOLVED Chatham University: no working pattern, 5 seasons missing
-UNRESOLVED Franciscan University of Steubenville: no working pattern, 5 seasons missing
-FIXED Geneva College: sidearm on athletics.geneva.edu (slug=baseball), +108 rows, 0 seasons still missing
-FIXED Grove City College: sidearm on athletics.gcc.edu (slug=baseball), +110 rows, 0 seasons still missing
-FIXED Saint Vincent College: sidearm on athletics.stvincent.edu (slug=baseball), +137 rows, 0 seasons still missing
-UNRESOLVED Thiel College: no working pattern, 5 seasons missing
-FIXED Washington & Jefferson College: sidearm on gopresidents.com (slug=baseball), +145 rows, 0 seasons still missing
-FIXED Waynesburg University: sidearm on waynesburgsports.com (slug=baseball), +139 rows, 0 seasons still missing
-FIXED Westminster College (PA): sidearm on athletics.westminster.edu (slug=baseball), +109 rows, 0 seasons still missing
-UNRESOLVED Coe College: no working pattern, 5 seasons missing
-UNRESOLVED Simpson College (IA): no working pattern, 5 seasons missing
-UNRESOLVED Crown College (MN): no working pattern, 5 seasons missing
-FIXED Martin Luther College: sidearm on mlcknights.com (slug=baseball), +86 rows, 0 seasons still missing
-UNRESOLVED Blackburn College: no working pattern, 5 seasons missing
-UNRESOLVED Eureka College: no working pattern, 5 seasons missing
-UNRESOLVED Greenville University: no working pattern, 5 seasons missing
-FIXED Mississippi University for Women: sidearm on owlsathletics.com (slug=baseball), +106 rows, 0 seasons still missing
+UNRESOLVED Juniata College: no working pattern, 5 seasons missing
+UNRESOLVED Knox College: no working pattern, 5 seasons missing
+UNRESOLVED Lasell University: no working pattern, 5 seasons missing
+UNRESOLVED Lesley University: no working pattern, 1 seasons missing
+UNRESOLVED Linfield University: no working pattern, 5 seasons missing
+FIXED Lycoming College: sidearm on lycomingathletics.com (slug=baseball), +0 rows, 1 seasons still missing
+UNRESOLVED MCLA (Massachusetts College of Liberal Arts): no working pattern, 5 seasons missing
+UNRESOLVED Marian University (WI): no working pattern, 5 seasons missing
+UNRESOLVED Mary Baldwin University: no working pattern, 1 seasons missing
+UNRESOLVED Massachusetts Maritime Academy: no working pattern, 5 seasons missing
+UNRESOLVED Methodist University: no working pattern, 5 seasons missing
+UNRESOLVED Mitchell College: no working pattern, 5 seasons missing
+UNRESOLVED Moravian University: no working pattern, 5 seasons missing
+UNRESOLVED Muskingum University: no working pattern, 5 seasons missing
+UNRESOLVED Nazareth University: no working pattern, 5 seasons missing
+UNRESOLVED North Carolina Wesleyan University: no working pattern, 5 seasons missing
+UNRESOLVED Ohio Northern University: no working pattern, 5 seasons missing
+UNRESOLVED Penn State Altoona: no working pattern, 5 seasons missing
+UNRESOLVED Penn State Behrend: no working pattern, 5 seasons missing
+UNRESOLVED Penn State Brandywine: no working pattern, 5 seasons missing
+FIXED Penn State Harrisburg: sidearm on psuharrisburgsports.com (slug=baseball), +0 rows, 1 seasons still missing
+UNRESOLVED Pfeiffer University: no working pattern, 5 seasons missing
 FIXED Principia College: sidearm on principiaathletics.com (slug=baseball), +0 rows, 1 seasons still missing
-FIXED Westminster College (MO): sidearm on wcbluejays.wcmo.edu (slug=baseball), +110 rows, 0 seasons still missing
+UNRESOLVED Randolph College: no working pattern, 5 seasons missing
+UNRESOLVED Russell Sage College: no working pattern, 5 seasons missing
+FIXED SUNY Polytechnic Institute: sidearm on wildcats.sunypoly.edu (slug=baseball), +0 rows, 1 seasons still missing
+UNRESOLVED Salem State University: no working pattern, 5 seasons missing
+UNRESOLVED Schreiner University: no working pattern, 5 seasons missing
+UNRESOLVED Simpson College (IA): no working pattern, 5 seasons missing
+UNRESOLVED Southern Virginia University: no working pattern, 5 seasons missing
+FIXED Southwestern University: sidearm on southwesternpirates.com (slug=baseball), +0 rows, 1 seasons still missing
+UNRESOLVED Suffolk University: no working pattern, 5 seasons missing
+UNRESOLVED Susquehanna University: no working pattern, 5 seasons missing
+UNRESOLVED Thiel College: no working pattern, 5 seasons missing
+UNRESOLVED UW-Platteville: no working pattern, 5 seasons missing
+UNRESOLVED UW-Stout: no working pattern, 5 seasons missing
+UNRESOLVED University of Dallas: no working pattern, 5 seasons missing
+UNRESOLVED University of La Verne: no working pattern, 5 seasons missing
+UNRESOLVED University of New England: no working pattern, 5 seasons missing
+UNRESOLVED University of Olivet: no working pattern, 5 seasons missing
+UNRESOLVED University of Saint Joseph (CT): no working pattern, 5 seasons missing
+UNRESOLVED University of the Ozarks (AR): no working pattern, 5 seasons missing
+UNRESOLVED Wentworth Institute of Technology: no working pattern, 5 seasons missing
+UNRESOLVED Westfield State University: no working pattern, 5 seasons missing
+UNRESOLVED Willamette University: no working pattern, 5 seasons missing
+UNRESOLVED Wittenberg University: no working pattern, 5 seasons missing
+UNRESOLVED Worcester State University: no working pattern, 5 seasons missing

@@ -1,9 +1,5 @@
 school,season,url,status,reason
-Albertus Magnus College,2022,https://www.thegnac.com/sports/bsb/2021-22/teams/albertusmagnus,unresolved,no working URL pattern found on live site
-Albertus Magnus College,2023,https://www.thegnac.com/sports/bsb/2022-23/teams/albertusmagnus,unresolved,no working URL pattern found on live site
-Albertus Magnus College,2024,https://www.thegnac.com/sports/bsb/2023-24/teams/albertusmagnus,unresolved,no working URL pattern found on live site
-Albertus Magnus College,2025,https://www.thegnac.com/sports/bsb/2024-25/teams/albertusmagnus,unresolved,no working URL pattern found on live site
-Albertus Magnus College,2026,https://www.thegnac.com/sports/bsb/2025-26/teams/albertusmagnus,unresolved,no working URL pattern found on live site
+Albertus Magnus College,2023,https://albertusfalcons.com/sports/bsb/2022-23/teams/albertusmagnus?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h,http_or_parse,pattern found but 2023 page missing/empty: https://albertusfalcons.com/sports/bsb/2022-23/teams/albertusmagnus?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h
 Alfred University,2022,https://gosaxons.com/sports/baseball/stats/2022,http_or_parse,pattern found but 2022 page missing/empty: https://gosaxons.com/sports/baseball/stats/2022
 Alfred University,2023,https://gosaxons.com/sports/baseball/stats/2023,http_or_parse,pattern found but 2023 page missing/empty: https://gosaxons.com/sports/baseball/stats/2023
 Anderson University (IN),2022,https://athletics.anderson.edu/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
@@ -16,21 +12,11 @@ Anna Maria College,2023,https://goamcats.com/sports/bsb/2022-23/teams/annamaria,
 Anna Maria College,2024,https://goamcats.com/sports/bsb/2023-24/teams/annamaria,unresolved,no working URL pattern found on live site
 Anna Maria College,2025,https://goamcats.com/sports/bsb/2024-25/teams/annamaria,unresolved,no working URL pattern found on live site
 Anna Maria College,2026,https://goamcats.com/sports/bsb/2025-26/teams/annamaria,unresolved,no working URL pattern found on live site
-Austin College,2022,https://acroos.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
-Austin College,2023,https://acroos.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
-Austin College,2024,https://acroos.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
-Austin College,2025,https://acroos.com/sports/baseball/stats/2025,unresolved,no working URL pattern found on live site
-Austin College,2026,https://acroos.com/sports/baseball/stats/2026,unresolved,no working URL pattern found on live site
 Belhaven University,2022,https://blazersports.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
 Belhaven University,2023,https://blazersports.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
 Belhaven University,2024,https://blazersports.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
 Belhaven University,2025,https://blazersports.com/sports/baseball/stats/2025,unresolved,no working URL pattern found on live site
 Belhaven University,2026,https://blazersports.com/sports/baseball/stats/2026,unresolved,no working URL pattern found on live site
-Blackburn College,2022,https://blackburnbeavers.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
-Blackburn College,2023,https://blackburnbeavers.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
-Blackburn College,2024,https://blackburnbeavers.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
-Blackburn College,2025,https://blackburnbeavers.com/sports/baseball/stats/2025,unresolved,no working URL pattern found on live site
-Blackburn College,2026,https://blackburnbeavers.com/sports/baseball/stats/2026,unresolved,no working URL pattern found on live site
 Bluffton University,2022,https://blufftonbeavers.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
 Bluffton University,2023,https://blufftonbeavers.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
 Bluffton University,2024,https://blufftonbeavers.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
@@ -41,16 +27,7 @@ Brevard College,2023,https://brevardtornados.com/sports/baseball/stats/2023,unre
 Brevard College,2024,https://brevardtornados.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
 Brevard College,2025,https://brevardtornados.com/sports/baseball/stats/2025,unresolved,no working URL pattern found on live site
 Brevard College,2026,https://brevardtornados.com/sports/baseball/stats/2026,unresolved,no working URL pattern found on live site
-Bridgewater State University,2022,https://www.bsubears.com/sports/bsb/2021-22/teams/bridgewaterst,unresolved,no working URL pattern found on live site
-Bridgewater State University,2023,https://www.bsubears.com/sports/bsb/2022-23/teams/bridgewaterst,unresolved,no working URL pattern found on live site
-Bridgewater State University,2024,https://www.bsubears.com/sports/bsb/2023-24/teams/bridgewaterst,unresolved,no working URL pattern found on live site
-Bridgewater State University,2025,https://www.bsubears.com/sports/bsb/2024-25/teams/bridgewaterst,unresolved,no working URL pattern found on live site
-Bridgewater State University,2026,https://www.bsubears.com/sports/bsb/2025-26/teams/bridgewaterst,unresolved,no working URL pattern found on live site
-Centenary College (LA),2022,https://gocentenary.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
-Centenary College (LA),2023,https://gocentenary.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
-Centenary College (LA),2024,https://gocentenary.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
-Centenary College (LA),2025,https://gocentenary.com/sports/baseball/stats/2025,unresolved,no working URL pattern found on live site
-Centenary College (LA),2026,https://gocentenary.com/sports/baseball/stats/2026,unresolved,no working URL pattern found on live site
+Centenary College (LA),2022,https://gocentenary.com/sports/bsb/2021-22/teams/centenaryla?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h,http_or_parse,pattern found but 2022 page missing/empty: https://gocentenary.com/sports/bsb/2021-22/teams/centenaryla?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h
 Chatham University,2022,https://chathamcougars.com/sports/bsb/2021-22/teams/chatham,unresolved,no working URL pattern found on live site
 Chatham University,2023,https://chathamcougars.com/sports/bsb/2022-23/teams/chatham,unresolved,no working URL pattern found on live site
 Chatham University,2024,https://chathamcougars.com/sports/bsb/2023-24/teams/chatham,unresolved,no working URL pattern found on live site
@@ -76,16 +53,10 @@ Crown College (MN),2023,https://crownstorm.com/sports/baseball/stats/2023,unreso
 Crown College (MN),2024,https://crownstorm.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
 Crown College (MN),2025,https://crownstorm.com/sports/baseball/stats/2025,unresolved,no working URL pattern found on live site
 Crown College (MN),2026,https://crownstorm.com/sports/baseball/stats/2026,unresolved,no working URL pattern found on live site
-Curry College,2022,https://www.curryathletics.com/sports/bsb/2021-22/teams/curry,unresolved,no working URL pattern found on live site
-Curry College,2023,https://www.curryathletics.com/sports/bsb/2022-23/teams/curry,unresolved,no working URL pattern found on live site
-Curry College,2024,https://www.curryathletics.com/sports/bsb/2023-24/teams/curry,unresolved,no working URL pattern found on live site
-Curry College,2025,https://www.curryathletics.com/sports/bsb/2024-25/teams/curry,unresolved,no working URL pattern found on live site
-Curry College,2026,https://www.curryathletics.com/sports/bsb/2025-26/teams/curry,unresolved,no working URL pattern found on live site
-Defiance College,2022,https://defianceathletics.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
-Defiance College,2023,https://defianceathletics.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
-Defiance College,2024,https://defianceathletics.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
-Defiance College,2025,https://defianceathletics.com/sports/baseball/stats/2025,unresolved,no working URL pattern found on live site
-Defiance College,2026,https://defianceathletics.com/sports/baseball/stats/2026,unresolved,no working URL pattern found on live site
+Defiance College,2022,https://defianceathletics.com/sports/bsb/2021-22/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h,http_or_parse,pattern found but 2022 page missing/empty: https://defianceathletics.com/sports/bsb/2021-22/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h
+Defiance College,2023,https://defianceathletics.com/sports/bsb/2022-23/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h,http_or_parse,pattern found but 2023 page missing/empty: https://defianceathletics.com/sports/bsb/2022-23/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h
+Defiance College,2024,https://defianceathletics.com/sports/bsb/2023-24/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h,http_or_parse,pattern found but 2024 page missing/empty: https://defianceathletics.com/sports/bsb/2023-24/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h
+Defiance College,2025,https://defianceathletics.com/sports/bsb/2024-25/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h,http_or_parse,pattern found but 2025 page missing/empty: https://defianceathletics.com/sports/bsb/2024-25/teams/defiancecollegeoh?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h
 East Texas Baptist University,2022,https://etbutigers.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
 East Texas Baptist University,2023,https://etbutigers.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
 East Texas Baptist University,2024,https://etbutigers.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
@@ -96,11 +67,7 @@ Elms College,2023,https://www.ecblazers.com/sports/bsb/2022-23/teams/elms,unreso
 Elms College,2024,https://www.ecblazers.com/sports/bsb/2023-24/teams/elms,unresolved,no working URL pattern found on live site
 Elms College,2025,https://www.ecblazers.com/sports/bsb/2024-25/teams/elms,unresolved,no working URL pattern found on live site
 Elms College,2026,https://www.ecblazers.com/sports/bsb/2025-26/teams/elms,unresolved,no working URL pattern found on live site
-Endicott College,2022,https://www.ecgulls.com/sports/bsb/2021-22/teams/endicott,unresolved,no working URL pattern found on live site
-Endicott College,2023,https://www.ecgulls.com/sports/bsb/2022-23/teams/endicott,unresolved,no working URL pattern found on live site
-Endicott College,2024,https://www.ecgulls.com/sports/bsb/2023-24/teams/endicott,unresolved,no working URL pattern found on live site
-Endicott College,2025,https://www.ecgulls.com/sports/bsb/2024-25/teams/endicott,unresolved,no working URL pattern found on live site
-Endicott College,2026,https://www.ecgulls.com/sports/bsb/2025-26/teams/endicott,unresolved,no working URL pattern found on live site
+Endicott College,2024,https://ecgulls.com/sports/bsb/2023-24/teams/endicott?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h,http_or_parse,pattern found but 2024 page missing/empty: https://ecgulls.com/sports/bsb/2023-24/teams/endicott?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h
 Eureka College,2022,https://eurekareddevils.com/sports/baseball/stats/2022,unresolved,no working URL pattern found on live site
 Eureka College,2023,https://eurekareddevils.com/sports/baseball/stats/2023,unresolved,no working URL pattern found on live site
 Eureka College,2024,https://eurekareddevils.com/sports/baseball/stats/2024,unresolved,no working URL pattern found on live site
